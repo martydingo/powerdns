@@ -1,6 +1,7 @@
 FROM powerdns/pdns-auth-master
 USER root
 COPY includes/container-entrypoint.sh /container-entrypoint.sh
+RUN chmod +x /container-entrypoint.sh
 RUN apt update && apt install -y gnupg2 vim wget
 RUN wget -O - https://pkg.dns-oarc.net/dns-oarc.distribution.key.gpg | apt-key add -
 RUN echo "deb http://pkg.dns-oarc.net/debian buster main" | tee /etc/apt/sources.list.d/dns-oarc.list
