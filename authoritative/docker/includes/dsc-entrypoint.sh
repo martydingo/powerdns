@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [[ $DSC_FORMAT_JSON == true ]]
 then
   sed -i 's/output_format XML/output_format JSON/g' /etc/dsc/dsc.conf
