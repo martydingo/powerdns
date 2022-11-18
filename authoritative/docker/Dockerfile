@@ -14,6 +14,7 @@ RUN sed -i 's/#dataset/dataset/g' /etc/dsc/dsc.conf
 RUN sed -i 's/dataset priming_/#dataset priming_/g' /etc/dsc/dsc.conf
 RUN sed -i 's/dataset country_code/#dataset country_code/g' /etc/dsc/dsc.conf
 RUN sed -i 's/dataset asn_all/#dataset asn_all/g' /etc/dsc/dsc.conf
+RUN sed -i 's/dataset qtype dns All:null Qtype:qtype queries-only,WWW-Only ;/#dataset qtype dns All:null Qtype:qtype queries-only,WWW-Only ;/g' /etc/dsc/dsc.conf
 RUN sed -i 's/#output_format XML/output_format XML/g' /etc/dsc/dsc.conf
 
 ENTRYPOINT ["/bin/bash", "-c", "/container-entrypoint.sh"]
