@@ -1,3 +1,8 @@
+if [[ $DSC_FORMAT_XML == true ]]
+then
+  sed -i 's/output_format JSON/output_format XML/g' /etc/dsc/dsc.conf
+fi
+
 if [[ $MMDB_ENABLED == true ]]
 then
   if [[ $MMDB_LICENSE_KEY == "" ]]
