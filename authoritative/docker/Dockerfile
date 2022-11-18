@@ -1,4 +1,4 @@
-FROM powerdns/pdns-auth-master
+FROM powerdns/pdns-auth-47
 USER root
 COPY includes/container-entrypoint.sh /dsc-entrypoint.sh
 COPY includes/container-entrypoint.sh /container-entrypoint.sh
