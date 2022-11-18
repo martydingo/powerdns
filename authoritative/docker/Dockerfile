@@ -1,6 +1,6 @@
 FROM powerdns/pdns-auth-47
 USER root
-COPY includes/container-entrypoint.sh /dsc-entrypoint.sh
+COPY includes/dsc-entrypoint.sh /dsc-entrypoint.sh
 COPY includes/container-entrypoint.sh /container-entrypoint.sh
 RUN chmod +x /container-entrypoint.sh
 RUN chmod +x /dsc-entrypoint.sh
