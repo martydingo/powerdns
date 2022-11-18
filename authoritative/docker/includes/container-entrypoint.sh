@@ -1,6 +1,6 @@
-if [[ $DSC_FORMAT_XML == true ]]
+if [[ $DSC_FORMAT_JSON == true ]]
 then
-  sed -i 's/output_format JSON/output_format XML/g' /etc/dsc/dsc.conf
+  sed -i 's/output_format XML/output_format JSON/g' /etc/dsc/dsc.conf
 fi
 
 if [[ $MMDB_ENABLED == true ]]
